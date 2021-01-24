@@ -1,0 +1,8 @@
+def s(a):
+    a.sort()
+    for i in range(len(a)-1,0,-1):
+        if a[i]!=a[i-1]:
+            return a[i-1]
+    
+a=[2,3,6,6,5]
+print(s(a))
